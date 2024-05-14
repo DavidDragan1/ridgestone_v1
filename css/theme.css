@@ -79,7 +79,17 @@
 
 @media (prefers-reduced-motion: no-preference) {
   :root {
-    scroll-behavior: smooth; } }
+    scroll-behavior: smooth; } 
+  }
+
+
+    @media screen and (max-width: 1200px) {
+      .heroimg {
+          width: 200px!important;
+          height:auto;
+          margin-bottom: 400px;
+      }
+  }
 
 body {
   margin: 0;
@@ -7149,6 +7159,8 @@ textarea.form-control-lg {
     text-align: center !important; } }
 
 @media (min-width: 768px) {
+
+
   .float-md-start {
     float: left !important; }
   .float-md-end {

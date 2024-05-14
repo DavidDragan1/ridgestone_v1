@@ -47,6 +47,23 @@
        url('./fonts/inter-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+@media screen and (max-width: 1200px) {
+      .heroimg {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+    .heroimg::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.8); /* Adjust the opacity (last value) as needed */
+    }
+  }
+
 </style>
 
   </head>
@@ -104,22 +121,14 @@
       <div class="w-100 overflow-hidden bg-gray-100" id="top">
   
 <div class="container position-relative">
-  <div class="col-12 col-lg-8 mt-0 h-100 position-absolute top-0 end-0 bg-cover" data-aos="fade-left" style="background-image: url(img/webp/interior11.webp);">
-    
+  <div class="col-12 col-lg-8 mt-0 h-100 position-absolute top-0 end-0 bg-cover heroimg" data-aos="fade-left" style="background-image: url(img/webp/interior11.webp);"></div>
+  <div class="row">
+      <div class="col-lg-7 py-vh-6 position-relative" data-aos="fade-right">
+        <h1 class="display-1 fw-bold mt-5">Transforming Your Vision to Reality</h1>
+        <p class="lead">We are world-renowned specialists in residential and commercial developments, committed to quality, sustainability, and a better future, <em>together</em>.</p>
+        <a href="contact-form/index.html" class="btn btn-dark btn-xl shadow me-3 rounded-0 my-5">Get Started Today</a>
+      </div>
   </div>
-    <div class="row">
-
-<div class="col-lg-7 py-vh-6 position-relative" data-aos="fade-right">
-  <h1 class="display-1 fw-bold mt-5">Transforming Your Vision to Reality</h1>
-  <p class="lead">We are world-renowned specialists in residential and commercial developments, committed to quality, sustainability, and a better future, <em>together</em>.</p>
-  <a href="contact-form/index.html" class="btn btn-dark btn-xl shadow me-3 rounded-0 my-5">Get Started Today</a>
-</div>
-
-
-
-</div>
-</div>
-
 </div>
 
 <div class="py-vh-5 w-100 overflow-hidden" id="aboutus">
@@ -307,19 +316,19 @@
 
 </div>
 
-<div class="container py-vh-4 w-100 overflow-hidden">
+<div class="container py-vh-4 w-100 overflow-hidden" >
   <div class="row d-flex justify-content-center align-items-center">
     <div class="col-lg-5">
-  <h3 class="py-5 border-top border-dark" data-aos="fade-right">What Our Clients Say</h3>
-</div>
-<div class="col-md-7" data-aos="fade-left">
-  <blockquote>
-    <div class="fs-4 my-3 fw-light pt-4 border-bottom pb-3">“Choosing Ridgestone Developments for our commercial development project was one of the best decisions we made. Their team displayed unparalleled professionalism and attention to detail throughout the entire process. From initial concept discussions to final construction, Ridgestone exceeded our expectations at every turn. Their commitment to sustainable practices was evident in the innovative solutions they proposed, which not only saved us money but also aligned with our company's values. I highly recommend Ridgestone to anyone seeking a reliable and visionary partner for their development needs.”</div>
-    <img src="img/webp/person11.webp" width="64" height="64" class="img-fluid rounded-circle me-3" alt="" data-aos="fade">
-    <span><span class="fw-bold">Arun Chopra,</span>
-      CEO of Chopra Industries Ltd.</span>
-  </blockquote>
-</div>
+      <h3 class="py-5 border-top border-dark" data-aos="fade-right" style="padding-left: 5%; padding-right: 5%;">What Our Clients Say</h3>
+    </div>
+    <div class="col-md-7" data-aos="fade-left">
+      <blockquote style="padding-left: 5%; padding-right: 5%;">
+        <div class="fs-4 my-3 fw-light pt-4 border-bottom pb-3" >“Choosing Ridgestone Developments for our commercial development project was one of the best decisions we made. Their team displayed unparalleled professionalism and attention to detail throughout the entire process. From initial concept discussions to final construction, Ridgestone exceeded our expectations at every turn. Their commitment to sustainable practices was evident in the innovative solutions they proposed, which not only saved us money but also aligned with our company's values. I highly recommend Ridgestone to anyone seeking a reliable and visionary partner for their development needs.”</div>
+        <img src="img/webp/person11.webp" width="64" height="64" class="img-fluid rounded-circle me-3" alt="" data-aos="fade">
+        <span><span class="fw-bold">Arun Chopra,</span>
+          CEO of Chopra Ind. Ltd.</span>
+      </blockquote>
+    </div>
 
   </div>
 </div>
